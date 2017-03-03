@@ -1,0 +1,19 @@
+{
+  "name": "the-floor-is-lava",
+  "version": "1.0.0",
+  "description": "The Floor Is Lava! Watson as the basis for Home Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snugug/lava-floor.git"
+  },
+  "author": "Sam Richard <snugug@us.ibm.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Snugug/lava-floor/issues"
+  },
+  "homepage": "https://github.com/Snugug/lava-floor#readme"
+}
