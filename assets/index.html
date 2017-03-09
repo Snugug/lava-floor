@@ -7,14 +7,18 @@
   <script src="/js/ws.js"></script>
 </head>
 <body>
-  <h1>Simple Live Display</h1>
-  <p id="messages"></p>
+  <div class="_container">
+    <h1>Simple Live Display</h1>
+    <div class="_container--conversation">
+      <div class="_container--inner-conversation" id="conversation"></div>
+    </div>
 
-  <form id="submit" action="">
-    <input type="text" id="command">
-    <button id="genie">Your Wish is My Command</button>
-  </form>
-  <hr/>
-  <div id="status">unknown</div>
+    <form id="submit" class="_container--input">
+      <fieldgroup class="input">
+        <input class="input--text" type="text" id="command">
+        <button class="input--submit" id="genie">Your Wish is My Command</button>
+      </fieldgroup>
+    </form>
+  </div>
 </body>
 </html>

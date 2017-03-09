@@ -1,3 +1,80 @@
+:root {
+  --accent: #9753e1;
+  --black: #000;
+  --white: #fbf8f8;
+  --bubble-border: .15em solid var(--accent);
+}
+
+*, *::before, *::afer {
+  box-sizing: border-box;
+}
+
 body {
-  background: red;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: sans-serif;
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  display: none;
+}
+
+/*
+ * Conversation Layout
+ */
+
+._container {
+  max-width: 800px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+._container--conversation {
+  height: calc(100vh - 10em);
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+}
+
+/*
+ * Bubble Component
+ */
+
+.bubble {
+  border-color: var(--accent);
+  padding: .25em .5em;
+  margin: 1em .5em;
+}
+
+.bubble[from='watson'] {
+  text-align: left;
+  border-left: var(--bubble-border);
+}
+
+.bubble[from='user'] {
+  text-align: right;
+  border-right: var(--bubble-border);
+}
+
+/*
+ * Input Component 
+ */
+.input {
+  height: 2em;
+  overflow: hidden;
+}
+
+.input--text {
+  border-radius: 5px;
+  background-color: var(--white);
+  height: 1.5em;
+  width: 100%;
+}
+
+.input--submit {
+  display: none;
 }
