@@ -31,10 +31,11 @@ h1 {
   max-width: 800px;
   height: 100vh;
   margin: 0 auto;
+  padding: .25em .5em;
 }
 
 ._container--conversation {
-  height: calc(100vh - 10em);
+  height: calc(100vh - 5.5em);
   display: flex;
   flex-direction: column-reverse;
   overflow: auto;
@@ -64,17 +65,34 @@ h1 {
  * Input Component 
  */
 .input {
-  height: 2em;
+  margin-top: 2em;
   overflow: hidden;
+  display: flex;
 }
 
 .input--text {
-  border-radius: 5px;
-  background-color: var(--white);
-  height: 1.5em;
-  width: 100%;
+  display: block;
+  background: none;
+  border: none;
+  border-bottom: var(--bubble-border);
+  font-size: 1em;
+  width: calc(100% - 2rem);
+  margin-right: 2rem;
+  padding: .25rem .5rem;
+  color: var(--white);
+}
+
+.input--text:active,
+.input--text:focus {
+  border-color: var(--white);
+  outline: none;
 }
 
 .input--submit {
-  display: none;
+  display: block;
+  background: none;
+  color: var(--white);
+  border: 2px solid var(--white);
+  font-size: 1em;
+  padding: .5rem 3rem;
 }
